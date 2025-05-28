@@ -88,7 +88,7 @@ public class AddNewTask extends BottomSheetDialogFragment {
             public void onClick(View v) {
                 String text = mEditText.getText().toString();
                 if (finalIsUpdate){
-                    myDB.updateTask(bundle.getInt("ID"),text);
+                    myDB.updateTask(bundle.getInt("Id"),text);
                 }else {
                     TaskModel item = new TaskModel();
                     item.setTask(text);
